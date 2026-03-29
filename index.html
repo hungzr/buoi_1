@@ -1,761 +1,387 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
+<html class="scroll-smooth" lang="vi"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>ALGORITHMIC ATELIER | Senior Data Scientist</title>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<title>Mastering Agentic AI &amp; Smart Chatbots</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
             colors: {
-              "on-tertiary-container": "#2f9696",
-              "surface-container": "#efedf1",
-              "tertiary-fixed-dim": "#76d6d5",
-              "on-secondary-container": "#00616d",
-              "on-tertiary-fixed-variant": "#004f4f",
-              "surface-container-high": "#e9e7eb",
-              "secondary-fixed": "#9cf0ff",
-              "error-container": "#ffdad6",
-              "tertiary-container": "#002626",
-              "on-surface-variant": "#44474e",
-              "surface": "#faf9fd",
-              "tertiary": "#000d0d",
-              "background": "#faf9fd",
-              "on-error-container": "#93000a",
-              "outline": "#74777f",
-              "secondary": "#006875",
-              "primary": "#000a1e",
-              "secondary-container": "#00e3fd",
+              "tertiary-dim": "#883700",
+              "on-primary-fixed-variant": "#00207e",
+              "on-tertiary": "#fff0ea",
+              "surface-dim": "#d2d0ff",
               "surface-container-lowest": "#ffffff",
-              "surface-container-low": "#f4f3f7",
-              "primary-fixed": "#d6e3ff",
-              "on-background": "#1a1b1e",
-              "on-error": "#ffffff",
-              "on-tertiary": "#ffffff",
-              "on-primary-container": "#708ab5",
-              "primary-fixed-dim": "#aec7f6",
-              "on-secondary-fixed": "#001f24",
-              "inverse-on-surface": "#f1f0f4",
-              "primary-container": "#002147",
-              "surface-variant": "#e3e2e6",
-              "surface-tint": "#465f88",
-              "surface-container-highest": "#e3e2e6",
-              "error": "#ba1a1a",
-              "on-primary": "#ffffff",
-              "on-secondary": "#ffffff",
-              "on-primary-fixed-variant": "#2d476f",
-              "surface-dim": "#dad9dd",
-              "inverse-primary": "#aec7f6",
-              "on-primary-fixed": "#001b3d",
-              "secondary-fixed-dim": "#00daf3",
-              "on-tertiary-fixed": "#002020",
-              "on-secondary-fixed-variant": "#004f58",
-              "outline-variant": "#c4c6cf",
-              "inverse-surface": "#2f3033",
-              "tertiary-fixed": "#93f2f2",
-              "surface-bright": "#faf9fd",
-              "on-surface": "#1a1b1e"
+              "outline": "#74739e",
+              "surface-variant": "#dcd9ff",
+              "secondary-dim": "#740ec2",
+              "secondary-fixed-dim": "#dbb4ff",
+              "surface-container-highest": "#dcd9ff",
+              "inverse-surface": "#0a082f",
+              "on-error-container": "#510017",
+              "surface": "#f9f5ff",
+              "surface-container": "#e9e5ff",
+              "on-primary": "#f2f1ff",
+              "tertiary-fixed": "#ff955e",
+              "surface-container-low": "#f2efff",
+              "on-secondary-fixed-variant": "#7511c3",
+              "on-primary-fixed": "#000000",
+              "tertiary-fixed-dim": "#ff7f36",
+              "surface-bright": "#f9f5ff",
+              "primary-container": "#859aff",
+              "surface-container-high": "#e2dfff",
+              "on-primary-container": "#001867",
+              "on-background": "#2b2a51",
+              "on-secondary": "#fbefff",
+              "on-surface-variant": "#585781",
+              "tertiary": "#9b3f00",
+              "primary-fixed-dim": "#718bff",
+              "on-tertiary-fixed-variant": "#642600",
+              "secondary": "#8126cf",
+              "error": "#b41340",
+              "on-tertiary-container": "#562000",
+              "error-dim": "#a70138",
+              "primary-dim": "#003cd3",
+              "on-surface": "#2b2a51",
+              "secondary-fixed": "#e5c6ff",
+              "inverse-on-surface": "#9a99c6",
+              "primary": "#0846ed",
+              "on-secondary-container": "#6900b4",
+              "inverse-primary": "#6d88ff",
+              "secondary-container": "#e5c6ff",
+              "on-error": "#ffefef",
+              "on-secondary-fixed": "#4f0089",
+              "surface-tint": "#0846ed",
+              "tertiary-container": "#ff955e",
+              "outline-variant": "#aba9d7",
+              "background": "#f9f5ff",
+              "error-container": "#f74b6d",
+              "on-tertiary-fixed": "#2f0e00",
+              "primary-fixed": "#859aff"
             },
             fontFamily: {
-              "headline": ["Manrope"],
+              "headline": ["Space Grotesk"],
               "body": ["Inter"],
               "label": ["Inter"]
             },
-            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
           },
         },
       }
     </script>
 <style>
-      body { font-family: 'Inter', sans-serif; background-color: #faf9fd; }
-      h1, h2, h3 { font-family: 'Manrope', sans-serif; }
-      .glass { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(20px); }
-      .toned-shadow { box-shadow: 0 20px 40px rgba(0, 33, 71, 0.06); }
-      .dot-grid { background-image: radial-gradient(#c4c6cf 1px, transparent 1px); background-size: 30px 30px; }
-      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #e5c6ff 0%, transparent 50%),
+                        radial-gradient(circle at bottom left, #859aff 0%, transparent 50%);
+        }
     </style>
 </head>
-<body class="text-on-surface selection:bg-secondary-container">
-<!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-white/60 dark:bg-slate-950/60 backdrop-blur-xl">
-<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
-<div class="text-2xl font-black tracking-tighter text-slate-900 dark:text-white">ALGORITHMIC ATELIER</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-cyan-600 dark:text-cyan-400 font-bold border-b-2 border-cyan-500 pb-1" href="#hero">Hero</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white transition-all duration-300" href="#philosophy">Philosophy</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white transition-all duration-300" href="#skills">Skills</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white transition-all duration-300" href="#experience">Experience</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white transition-all duration-300" href="#projects">Projects</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white transition-all duration-300" href="#awards">Awards</a>
-<button class="bg-primary text-on-primary px-8 py-3 rounded-xl font-bold hover:scale-95 transition-transform duration-200">Contact</button>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(43,42,81,0.06)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<div class="text-xl font-bold tracking-tighter text-slate-900 dark:text-slate-50 font-headline">
+                Mastering Agentic AI
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-['Space_Grotesk'] font-medium text-sm tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-500 hover:scale-105 transition-transform duration-200" href="#curriculum">Curriculum</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-500 hover:scale-105 transition-transform duration-200" href="#audience">Audience</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-500 hover:scale-105 transition-transform duration-200" href="#benefits">Benefits</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-500 hover:scale-105 transition-transform duration-200" href="#pricing">Pricing</a>
 </div>
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined">menu</span>
-</button>
+<button class="bg-tertiary text-on-tertiary px-6 py-2 rounded-full font-bold text-sm hover:scale-105 active:scale-95 transition-all shadow-lg">
+                Enroll Now
+            </button>
 </div>
 </nav>
-<main class="relative pt-24 overflow-hidden">
-<!-- Background Pattern -->
-<div class="absolute inset-0 dot-grid opacity-20 -z-10"></div>
 <!-- Hero Section -->
-<section class="px-8 md:px-12 py-20 max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-16 items-center" id="hero">
-<div class="w-full md:w-3/5 space-y-8">
-<div class="inline-flex items-center gap-2 bg-secondary-fixed text-on-secondary-fixed px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase">
-<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                    Available for Strategic Partnerships
-                </div>
-<h1 class="text-5xl md:text-7xl font-extrabold text-primary tracking-tighter leading-[1.1]">
-                    Senior Data Scientist | <span class="text-secondary">Banking &amp; Agentic AI Pioneer.</span>
-</h1>
-<p class="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-2xl">
-                    Expertise in building centralized Feature Stores and deploying enterprise-grade Machine Learning. Leading the frontier of Agentic AI to transform traditional banking into hyper-personalized, automated financial experiences.
+<section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden hero-gradient">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<span class="inline-block py-1 px-3 rounded-md bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-6 font-headline">
+                    KỶ NGUYÊN AI 2026
+                </span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold text-on-surface leading-[1.1] tracking-tighter mb-8">
+                    Làm Chủ Kỷ Nguyên <span class="text-primary italic">Agentic AI</span> – Tự Tay Xây Dựng Trợ Lý Thông Minh
+                </h1>
+<p class="text-xl text-on-surface-variant mb-10 max-w-xl leading-relaxed">
+                    Từ sinh viên tối ưu việc học đến người đi làm tự động hóa quy trình kinh doanh. Khóa học thực chiến giúp bạn dẫn đầu làn sóng AI 2026.
                 </p>
-<div class="flex flex-wrap gap-4 pt-4">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-primary-container transition-colors toned-shadow">View Portfolio</button>
-<button class="bg-surface-container-highest text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-high transition-colors">Download CV</button>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-tertiary text-on-tertiary px-10 py-4 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-xl">
+                        Đăng Ký Tư Vấn Ngay
+                    </button>
+<button class="bg-surface-container-lowest text-primary px-10 py-4 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all">
+                        Xem Demo
+                    </button>
 </div>
 </div>
-<div class="w-full md:w-2/5 relative">
-<div class="aspect-[4/5] rounded-xl overflow-hidden toned-shadow rotate-2 relative group">
-<img class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern professional AI engineer in a clean architectural glass bank interior, focused expression, soft natural sunlight, cinematic corporate aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWYldXLS2Fim0oKTb_E9V1Lau_6t1aJsgpmxJKP-iqcGLt30Qg8PgG9AzagOcIyfTBe1Mzm4Jz73_HtnhXnf6SMel-3CyJoh2OXejuc4p6efXQzaQQK7n2UgGMIesvQJjd64dqj9H8gcCXHtyMS9KINo0AvjNhdvFHMSwktRWkN0icFLI2e9BE_HfVXk-SbLEDLP-WRUbFgyltQ9z-2Hvidv-n5r6f4dPE3UzVIkl15dYoptvdA58ZgXKDNTZAoYDev9qhW92wjvc"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+<div class="relative lg:block">
+<div class="absolute -top-20 -right-20 w-96 h-96 bg-primary/20 rounded-full blur-[100px]"></div>
+<div class="relative glass-card rounded-xl p-4 border border-white/20 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+<img alt="Agentic AI Visualization" class="rounded-lg w-full h-[500px] object-cover" data-alt="futuristic 3D visualization of neural networks and glowing blue digital nodes connecting in dark space with atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0AxVMNsT4TKIMV6__y0JC95oa7jA5cQfE61RZtyfNFbpPQ8y21XTkfj-mzHKGL3eA2YGvRdvaLlNvqZNBbBvhHKyqIQ4UBhqzYzNBeeMBFBft_GjH9GlhSIX_3RHEW2aXETXna9xO4xUKpN8r_lIelQUlNIvQ5ZSipid1nRuSg7RLEurnHWSN4fE9OkORr994LPpu78GWtuqlVMKtCqGts-GQHO-7uwPbkzjPnI0nEXF6kKIix11CkZKyYKfudViSpA0vkOODovr-"/>
+<div class="absolute bottom-10 -left-10 glass-card p-6 rounded-xl shadow-xl max-w-xs border border-white/40">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-bold font-headline">AI Agent Active</span>
 </div>
-<!-- Floating Glass Element -->
-<div class="absolute -bottom-6 -left-12 glass p-6 rounded-lg toned-shadow max-w-[240px] hidden lg:block">
-<div class="flex items-center gap-4 mb-3">
-<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center">
-<span class="material-symbols-outlined text-secondary">analytics</span>
+<p class="text-xs text-on-surface-variant">Tự động hóa 90% quy trình làm việc lặp lại chỉ với 1 prompt duy nhất.</p>
 </div>
-<span class="text-xs font-bold text-primary tracking-widest uppercase">Live Metrics</span>
 </div>
-<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
-<div class="h-full bg-secondary w-3/4"></div>
-</div>
-<p class="text-[10px] mt-2 text-on-surface-variant font-medium">99.8% Prediction Accuracy in Real-time Risk Engine</p>
 </div>
 </div>
 </section>
-<!-- Core Philosophy (Bento Grid) -->
-<section class="px-8 md:px-12 py-28 bg-surface-container-low" id="philosophy">
-<div class="max-w-screen-2xl mx-auto">
+<!-- Target Audience Section -->
+<section class="py-24 bg-surface" id="audience">
+<div class="max-w-7xl mx-auto px-6">
 <div class="mb-16">
-<h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-6">AI-Driven Banking Strategy.</h2>
-<p class="text-on-surface-variant max-w-xl">Integrating precision engineering with cognitive intelligence to build the future of institutional finance.</p>
+<span class="text-tertiary font-bold text-xs uppercase tracking-[0.2em] font-headline mb-4 block">DÀNH CHO AI?</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold tracking-tight text-on-surface">Giải Pháp Cho Mọi Đối Tượng</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Pillar 1 -->
-<div class="bg-surface-container-lowest p-10 rounded-xl toned-shadow group hover:bg-primary transition-colors duration-500">
-<span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:text-secondary-fixed transition-colors">database</span>
-<h3 class="text-2xl font-bold mb-4 text-primary group-hover:text-on-primary">Scalability</h3>
-<p class="text-on-surface-variant group-hover:text-on-primary-container leading-relaxed">Centralized Feature Store architecture enabling cross-functional data orchestration and rapid model deployment at scale.</p>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Students -->
+<div class="group p-10 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors duration-300 flex flex-col justify-between">
+<div>
+<div class="w-16 h-16 bg-primary-container rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" data-icon="school">school</span>
 </div>
-<!-- Pillar 2 -->
-<div class="bg-surface-container-lowest p-10 rounded-xl toned-shadow group hover:bg-primary transition-colors duration-500">
-<span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:text-secondary-fixed transition-colors">shield_person</span>
-<h3 class="text-2xl font-bold mb-4 text-primary group-hover:text-on-primary">Security</h3>
-<p class="text-on-surface-variant group-hover:text-on-primary-container leading-relaxed">Advanced Fraud Detection systems utilizing real-time behavioral analysis and zero-trust data governance protocols.</p>
-</div>
-<!-- Pillar 3 -->
-<div class="bg-surface-container-lowest p-10 rounded-xl toned-shadow group hover:bg-primary transition-colors duration-500">
-<span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:text-secondary-fixed transition-colors">neurology</span>
-<h3 class="text-2xl font-bold mb-4 text-primary group-hover:text-on-primary">Intelligence</h3>
-<p class="text-on-surface-variant group-hover:text-on-primary-container leading-relaxed">Agentic AI Chatbots that move beyond simple queries to autonomous financial planning and transaction management.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Tech Stack & Skills -->
-<section class="px-8 md:px-12 py-28 max-w-screen-2xl mx-auto" id="skills">
-<div class="flex flex-col lg:flex-row gap-16">
-<div class="lg:w-1/3">
-<h2 class="text-4xl md:text-5xl font-extrabold text-primary sticky top-32">The Stack of the <span class="text-secondary">Future.</span></h2>
-</div>
-<div class="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-y-12 gap-x-12">
-<!-- Category 1 -->
-<div class="space-y-6">
-<h4 class="text-xs font-bold tracking-[0.2em] text-on-surface-variant uppercase">Languages &amp; Core</h4>
-<div class="flex flex-wrap gap-2">
-<span class="px-4 py-2 bg-surface-container-high rounded-lg text-sm font-semibold text-primary">Python</span>
-<span class="px-4 py-2 bg-surface-container-high rounded-lg text-sm font-semibold text-primary">SQL</span>
-<span class="px-4 py-2 bg-surface-container-high rounded-lg text-sm font-semibold text-primary">PySpark</span>
-</div>
-</div>
-<!-- Category 2 -->
-<div class="space-y-6">
-<h4 class="text-xs font-bold tracking-[0.2em] text-on-surface-variant uppercase">AI / Machine Learning</h4>
-<div class="flex flex-wrap gap-2">
-<span class="px-4 py-2 bg-surface-container-high rounded-lg text-sm font-semibold text-primary">Deep Learning</span>
-<span class="px-4 py-2 bg-surface-container-high rounded-lg text-sm font-semibold text-primary">GenAI</span>
-<span class="px-4 py-2 bg-surface-container-high rounded-lg text-sm font-semibold text-primary">Statistical Analysis</span>
-<span class="px-4 py-2 bg-surface-container-high rounded-lg text-sm font-semibold text-primary">Machine Learning</span>
-</div>
-</div>
-<!-- Category 3 -->
-<div class="space-y-6">
-<h4 class="text-xs font-bold tracking-[0.2em] text-on-surface-variant uppercase">Engineering</h4>
-<div class="flex flex-wrap gap-2">
-<span class="px-4 py-2 bg-surface-container-high rounded-lg text-sm font-semibold text-primary">Big Data</span>
-<span class="px-4 py-2 bg-surface-container-high rounded-lg text-sm font-semibold text-primary">Web Crawlers</span>
-<span class="px-4 py-2 bg-surface-container-high rounded-lg text-sm font-semibold text-primary">Data Viz</span>
-<span class="px-4 py-2 bg-surface-container-high rounded-lg text-sm font-semibold text-primary">API Design</span>
-</div>
-</div>
-<!-- Category 4 -->
-<div class="space-y-6">
-<h4 class="text-xs font-bold tracking-[0.2em] text-on-surface-variant uppercase">Communication</h4>
-<div class="p-6 bg-secondary-fixed/30 rounded-xl border border-secondary/10">
-<p class="text-sm font-bold text-secondary mb-1">English Mastery</p>
-<p class="text-3xl font-black text-primary">IELTS 7.5</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Professional Experience -->
-<section class="px-8 md:px-12 py-28 bg-primary text-on-primary" id="experience">
-<div class="max-w-screen-2xl mx-auto">
-<h2 class="text-4xl md:text-5xl font-extrabold mb-20 tracking-tighter">Strategic Impact.</h2>
-<div class="space-y-24">
-<!-- Role 1 -->
-<div class="flex flex-col md:flex-row gap-8 md:gap-16 items-start relative">
-<div class="md:w-1/4">
-<p class="text-secondary-fixed-dim font-bold tracking-widest text-sm uppercase">2021 — PRESENT</p>
-<h3 class="text-xl font-bold mt-2">Senior Data Scientist</h3>
-<p class="text-on-primary-container">Leading International Bank</p>
-</div>
-<div class="md:w-3/4">
-<ul class="space-y-6 text-lg text-primary-fixed leading-relaxed list-none">
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-secondary-fixed">chevron_right</span>
-                                    Unified Feature Store architecture for 50+ real-time models, reducing deployment friction by 70%.
-                                </li>
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-secondary-fixed">chevron_right</span>
-                                    Developed Agentic AI frameworks for automated credit risk assessment using multi-modal LLM evaluation.
-                                </li>
+<h3 class="text-3xl font-headline font-bold mb-6">Sinh viên</h3>
+<ul class="space-y-4 text-on-surface-variant text-lg">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
+                                Tóm tắt kiến thức khổng lồ từ giáo trình và video bài giảng.
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
+                                Tạo lộ trình học tập và ôn thi cá nhân hóa bằng AI.
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
+                                Hỗ trợ nghiên cứu khoa học và viết tiểu luận chuyên nghiệp.
+                            </li>
 </ul>
 </div>
+<div class="mt-12 h-48 rounded-lg overflow-hidden">
+<img alt="Students" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="diverse group of students in a modern library using laptops and discussing digital projects with bright natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUl-qxxDyFc3ZHoo6QsjqItS87SrLMBtd-o4waYR6FTq0CW4LPwXt2HcXjX2tC4QEQ3-mfHaxIVTs25IAYGDiiJBSQxHSKnOBvjSRc94c4XoeanR-uPOJr_jeTCcNAjKMIN-nhvoc31PZK-baVqzsxr0e5l32SqnG_mSo_qjzFY2KS5w7_IlNv8sL518YArtIZpCWm-db0cMXO7NW2IajFXz9NaYKnY7MQG5QtAnPj7L-0xWmR_c3CBhJ2RRultaXau74kujTRdA1o"/>
 </div>
-<!-- Role 2 -->
-<div class="flex flex-col md:flex-row gap-8 md:gap-16 items-start opacity-70">
-<div class="md:w-1/4">
-<p class="text-secondary-fixed-dim font-bold tracking-widest text-sm uppercase">2018 — 2021</p>
-<h3 class="text-xl font-bold mt-2">AI Research &amp; Dev</h3>
-<p class="text-on-primary-container">Financial Tech Group</p>
 </div>
-<div class="md:w-3/4">
-<ul class="space-y-6 text-lg text-primary-fixed leading-relaxed list-none">
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-secondary-fixed">chevron_right</span>
-                                    Implemented Deep Learning models for fraud detection and market sentiment analysis via automated web crawlers.
-                                </li>
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-secondary-fixed">chevron_right</span>
-                                    Designed real-time data pipelines processing 1TB+ of daily unstructured financial news.
-                                </li>
+<!-- Professionals -->
+<div class="group p-10 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors duration-300 flex flex-col justify-between">
+<div>
+<div class="w-16 h-16 bg-secondary-container rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" data-icon="work">work</span>
+</div>
+<h3 class="text-3xl font-headline font-bold mb-6">Người đi làm</h3>
+<ul class="space-y-4 text-on-surface-variant text-lg">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+                                Tự động hóa báo cáo và xử lý dữ liệu lớn (No-code).
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+                                Xây dựng Chatbot 24/7 chăm sóc khách hàng và chốt đơn.
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+                                Tối ưu hóa quy trình vận hành doanh nghiệp bằng Agent AI.
+                            </li>
 </ul>
 </div>
-</div>
-</div>
-</div>
-</section>
-<!-- Key Projects -->
-<section class="px-8 md:px-12 py-28 max-w-screen-2xl mx-auto" id="projects">
-<h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-16 tracking-tighter">Selected Artifacts.</h2>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-<!-- Project 1 -->
-<div class="group relative bg-surface rounded-xl overflow-hidden toned-shadow">
-<div class="aspect-video overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Abstract visualization of a digital neural network with glowing cyan connections on a dark background, representing agentic AI" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9p-lk18E-w0jUQzxTMz7PWVbRX_DyoslCNMEzcn4kIYK8URscLT9v_bQJxGVLCKwrXDgky92sj6QAMYDMJL1rBgscXQAO4P8VYTgl9SmoeC-iX5K62TlabJD-DJ6pouMJCf74ZQncu9c0NjCddoc1drbwLTxZfvUvb3phUgNo-Ry2LREQMPfoSn5EPHf2u6HwJGY6Wm2nr84JIZeqX6onvbfiqIgxa_yIJXUyqmkw0AY341_jO5mQV3bWC3Xn6g77cARLv4ww4T8"/>
-</div>
-<div class="p-10">
-<h4 class="text-xs font-bold tracking-[0.3em] text-secondary uppercase mb-4">Autonomous Intelligence</h4>
-<h3 class="text-3xl font-bold text-primary mb-4">Project Nexus</h3>
-<p class="text-on-surface-variant mb-8 text-lg">Agentic AI Chatbot system capable of executing transactions and providing personalized financial advice based on real-time spending patterns.</p>
-<div class="flex gap-4">
-<span class="px-3 py-1 bg-surface-container text-xs font-bold rounded">LLM Agents</span>
-<span class="px-3 py-1 bg-surface-container text-xs font-bold rounded">FastAPI</span>
-<span class="px-3 py-1 bg-surface-container text-xs font-bold rounded">React</span>
-</div>
-</div>
-</div>
-<!-- Project 2 -->
-<div class="group relative bg-surface rounded-xl overflow-hidden toned-shadow">
-<div class="aspect-video overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Highly technical screen displaying complex data matrices and cybersecurity charts, representing real-time fraud detection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1Ly1RxqW-gNziaXXEymn0VrZhsfzU_UYm_O16SQyadiaHn9or7d_fNwkV9_eR9LNb_QXMYdqFiRt7K1pYvZ6fpxqtlj-EyY1ZarUJw-JoZsY4HdPl-Z1Oam1J4iEaKiF6XP0HNFQ7Wp4Cq1v6eMRrlx6X7ziy1tjPdSYfgzjz2X8pomiS_Kii1iLppJWJvpY8otsuwAWmWiP7MgrBNMFAVRz3kqKsEqb7b1y44CQ9cNG967LR1FvSKxO4o0aMj9IMILsUNxuwaPg"/>
-</div>
-<div class="p-10">
-<h4 class="text-xs font-bold tracking-[0.3em] text-secondary uppercase mb-4">Security Engineering</h4>
-<h3 class="text-3xl font-bold text-primary mb-4">Sentinel System</h3>
-<p class="text-on-surface-variant mb-8 text-lg">Real-time behavior-based fraud detection engine. Utilizes graph-based deep learning to identify anomalous transaction clusters in milliseconds.</p>
-<div class="flex gap-4">
-<span class="px-3 py-1 bg-surface-container text-xs font-bold rounded">Graph Neural Nets</span>
-<span class="px-3 py-1 bg-surface-container text-xs font-bold rounded">PyTorch</span>
-<span class="px-3 py-1 bg-surface-container text-xs font-bold rounded">Kafka</span>
+<div class="mt-12 h-48 rounded-lg overflow-hidden">
+<img alt="Professionals" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="modern corporate office with glass walls and professional people analyzing charts on screens in a clean high-tech environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArBZweMwMvzUy3PgU6fv6lUJ1nNF0NKP5tS1ceP-jToZyk0cwGLnE5Tu9_RuMjwaUIo_PHyjWHAA6junW3MPB_FQv_6fe1FIxSKTE74dz0kCNgUyD9tfvML82zKAjO5SpE9aZM1WgCvtWFk7NUWKUj0ZR0x3hJ-M7-K3-3D8cjqBU1ejSjANGOiavDdCXbNx27Q1kiyhIdRD2HdRAkjUMSYKISd_Wqpnpcbvyg6QaahOAG5IlRkZn0LDeGcxcC_7aJeUU6nbYs8O_B"/>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Awards & Honors -->
-<section class="px-8 md:px-12 py-20 bg-surface-container-lowest" id="awards">
-<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 border-y border-outline-variant/15 py-12">
-<div class="flex items-center gap-6">
-<span class="material-symbols-outlined text-6xl text-secondary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<!-- Curriculum Section -->
+<section class="py-24 bg-surface-container" id="curriculum">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-20">
+<span class="text-tertiary font-bold text-xs uppercase tracking-[0.2em] font-headline mb-4 block">CHƯƠNG TRÌNH ĐÀO TẠO</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface">Lộ Trình Trở Thành AI Master</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Module 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-primary">
+<span class="text-tertiary font-bold text-[10px] uppercase mb-4 block font-headline">MODULE 01</span>
+<h4 class="text-xl font-headline font-bold mb-4">LLMs &amp; Prompt Engineering</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Làm chủ ngôn ngữ của AI, kỹ thuật prompt nâng cao để điều khiển các mô hình ngôn ngữ lớn hàng đầu.</p>
+<div class="flex items-center gap-2 text-primary font-bold text-xs">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+                        2 Tuần thực chiến
+                    </div>
+</div>
+<!-- Module 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-secondary">
+<span class="text-tertiary font-bold text-[10px] uppercase mb-4 block font-headline">MODULE 02</span>
+<h4 class="text-xl font-headline font-bold mb-4">Agentic AI Architecture</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Hiểu sâu về cấu trúc của Agent, cách AI tự suy nghĩ, lập kế hoạch và thực hiện mục tiêu phức tạp.</p>
+<div class="flex items-center gap-2 text-primary font-bold text-xs">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+                        3 Tuần thực chiến
+                    </div>
+</div>
+<!-- Module 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-primary-container">
+<span class="text-tertiary font-bold text-[10px] uppercase mb-4 block font-headline">MODULE 03</span>
+<h4 class="text-xl font-headline font-bold mb-4">Tool Integration</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Kết nối AI với các công cụ thực tế: Google Sheets, Slack, Email và Database thông qua API.</p>
+<div class="flex items-center gap-2 text-primary font-bold text-xs">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+                        2 Tuần thực chiến
+                    </div>
+</div>
+<!-- Module 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-tertiary">
+<span class="text-tertiary font-bold text-[10px] uppercase mb-4 block font-headline">MODULE 04</span>
+<h4 class="text-xl font-headline font-bold mb-4">Platform Deployment</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Triển khai chatbot và agent lên các nền tảng web, mobile hoặc môi trường doanh nghiệp.</p>
+<div class="flex items-center gap-2 text-primary font-bold text-xs">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+                        3 Tuần thực chiến
+                    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-24 bg-surface" id="benefits">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 <div>
-<p class="text-xs font-black tracking-widest text-on-surface-variant uppercase">Recognition</p>
-<h4 class="text-2xl font-bold text-primary">Top Digital Innovator 2025</h4>
+<span class="text-tertiary font-bold text-xs uppercase tracking-[0.2em] font-headline mb-4 block">TẠI SAO CHỌN CHÚNG TÔI?</span>
+<h2 class="text-4xl font-headline font-bold text-on-surface mb-8 leading-tight">Khác Biệt Đến Từ Sự <span class="text-primary italic">Thực Chiến</span></h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="model_training">model_training</span>
 </div>
-</div>
-<div class="h-12 w-px bg-outline-variant/20 hidden md:block"></div>
-<div class="flex items-center gap-6">
-<span class="material-symbols-outlined text-6xl text-secondary" style="font-variation-settings: 'FILL' 1;">military_tech</span>
 <div>
-<p class="text-xs font-black tracking-widest text-on-surface-variant uppercase">Honors</p>
-<h4 class="text-2xl font-bold text-primary">Banking Excellence Award</h4>
+<h4 class="text-xl font-bold font-headline mb-2">80% Thời Lượng Thực Hành</h4>
+<p class="text-on-surface-variant leading-relaxed">Không lý thuyết suông. Bạn học thông qua việc xây dựng các project thực tế ngay tại lớp.</p>
 </div>
 </div>
-<div class="h-12 w-px bg-outline-variant/20 hidden md:block"></div>
-<div class="flex flex-col items-center">
-<p class="text-sm font-medium text-on-surface-variant italic">"A paradigm shift in how we view transactional data."</p>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="groups">groups</span>
+</div>
+<div>
+<h4 class="text-xl font-bold font-headline mb-2">Discord Community 24/7</h4>
+<p class="text-on-surface-variant leading-relaxed">Cộng đồng học viên và giảng viên hỗ trợ giải đáp thắc mắc và cập nhật tin tức AI mỗi ngày.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-tertiary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="verified">verified</span>
+</div>
+<div>
+<h4 class="text-xl font-bold font-headline mb-2">Chứng Nhận Mastery AI</h4>
+<p class="text-on-surface-variant leading-relaxed">Sở hữu chứng nhận có giá trị chuyên môn, giúp bạn bứt phá trong sự nghiệp và CV.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<img alt="Collaboration" class="rounded-xl w-full h-64 object-cover" data-alt="close up of creative team hands collaborating around a table with futuristic tech gadgets and clean design aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpPgWbCRb64RM3911tLJ1DFXgzM2Y97ZlaqEkpKwZ9DUzo1ZC6rSjJhja-z7Y8F3sLsjLcZk5bqWahN9cOe12zpdoP2qZ7h7qP_hEp_g-7I4P8Ungaf6h1SHX3VK00L6UgZ1431lsWP4sN6zoH3PfYAXBPQKCgq7SihIQQ7XWetqCrX5yyQJKGrNNIvVh7w6-8FHrggd3r5iBf32clFN3t0AHujTXVHZTO34wgp7GybjArDOWGQr1rLxf66zG-pUg9NoFvrMR-KZOn"/>
+<div class="bg-primary p-8 rounded-xl text-white">
+<div class="text-4xl font-headline font-bold mb-2">50+</div>
+<div class="text-sm opacity-80 uppercase tracking-widest font-bold">Dự án mẫu</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-secondary p-8 rounded-xl text-white">
+<div class="text-4xl font-headline font-bold mb-2">1000+</div>
+<div class="text-sm opacity-80 uppercase tracking-widest font-bold">Học viên</div>
+</div>
+<img alt="Workspace" class="rounded-xl w-full h-80 object-cover" data-alt="modern software developer workspace with multiple monitors displaying code and AI interfaces in a cool blue toned room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgnRYzVOAcZ9rC1bGr_kC7y2kVM9udjK37AQETMuu13SBgId-PhObwVTF1u4WflWeox7WgDKqYkonJAWTRyOT3vNnx7s1nIbnkTFgHmKMhiVxbCBo9Fvpp5_5gN9THo4k1rv_gjXU0chsySccIq-am9z4Eugp9KSyilzrUxF93nPjd8E7Sd4dEiBUbHyI_XD3uKqSqvhG_-FOtVwhQrWxFMZLMQrezBxZQluS7-BDWEM0HpLNdUMXxkQsvM_UPVzGRLaDes7-26AqL"/>
+</div>
 </div>
 </div>
 </section>
-<!-- Footer / Contact -->
-<footer class="bg-slate-50 dark:bg-slate-950 border-t border-slate-200/10">
-<div class="flex flex-col md:flex-row justify-between items-start w-full px-12 py-20 max-w-screen-2xl mx-auto gap-16">
-<div class="md:w-1/3">
-<div class="text-lg font-bold text-slate-900 dark:text-white mb-6 uppercase tracking-widest">ALGORITHMIC ATELIER</div>
-<p class="text-slate-500 dark:text-slate-400 mb-8 max-w-xs uppercase text-xs tracking-widest leading-loose">Precision meets sophistication. Bridging the gap between raw data and strategic human-centric intelligence.</p>
-<div class="flex gap-4">
-<a class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
-<span class="material-symbols-outlined">link</span>
-</a>
-<a class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
-<span class="material-symbols-outlined">terminal</span>
-</a>
+<!-- Pricing Section -->
+<section class="py-24 bg-surface-container-low" id="pricing">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-6">Đầu Tư Cho Tương Lai</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Chọn gói học phù hợp để bắt đầu hành trình chinh phục AI ngay hôm nay.</p>
+</div>
+<div class="flex flex-col md:flex-row justify-center gap-8 max-w-5xl mx-auto">
+<!-- Standard -->
+<div class="flex-1 bg-surface-container-lowest p-10 rounded-xl shadow-lg border border-outline-variant/20">
+<h3 class="text-2xl font-headline font-bold mb-2">Standard</h3>
+<p class="text-on-surface-variant text-sm mb-8">Dành cho cá nhân muốn tìm hiểu cơ bản.</p>
+<div class="mb-8">
+<span class="text-4xl font-headline font-bold text-on-surface">5.990.000đ</span>
+</div>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary" data-icon="check">check</span> Toàn bộ 4 Module bài giảng
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary" data-icon="check">check</span> Tài liệu thực hành chi tiết
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary" data-icon="check">check</span> Tham gia Discord cơ bản
+                        </li>
+</ul>
+<button class="w-full py-4 rounded-full border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all">Đăng Ký Ngay</button>
+</div>
+<!-- Early Bird (Recommended) -->
+<div class="flex-1 bg-primary p-10 rounded-xl shadow-2xl relative transform md:scale-105 border-4 border-white/20">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-tertiary text-on-tertiary px-6 py-1 rounded-full text-xs font-bold uppercase tracking-widest">PHỔ BIẾN NHẤT</div>
+<h3 class="text-2xl font-headline font-bold mb-2 text-white">Professional</h3>
+<p class="text-on-primary-fixed/60 text-sm mb-8">Dành cho người muốn thực chiến chuyên nghiệp.</p>
+<div class="mb-8">
+<span class="text-4xl font-headline font-bold text-white">8.990.000đ</span>
+<span class="text-white/60 line-through text-sm ml-2">12.500.000đ</span>
+</div>
+<ul class="space-y-4 mb-10 text-white">
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-tertiary-fixed" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span> Toàn bộ nội dung gói Standard
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-tertiary-fixed" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span> 5 Buổi Workshop chuyên sâu
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-tertiary-fixed" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span> Mentor 1-1 hỗ trợ project cuối khóa
+                        </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-tertiary-fixed" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span> Chứng nhận cao cấp
+                        </li>
+</ul>
+<button class="w-full py-4 rounded-full bg-tertiary text-on-tertiary font-bold hover:scale-105 transition-all shadow-xl">Nhận Ưu Đãi Ngay</button>
 </div>
 </div>
-<div class="md:w-1/2 w-full glass p-8 rounded-xl toned-shadow">
-<h4 class="text-sm font-bold tracking-widest text-primary uppercase mb-6">Initiate Collaboration</h4>
-<form class="space-y-4">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<input class="bg-surface-container-lowest/40 backdrop-blur-sm border-none rounded-lg p-4 focus:ring-2 focus:ring-secondary text-xs font-bold tracking-widest uppercase outline-none" placeholder="NAME" type="text"/>
-<input class="bg-surface-container-lowest/40 backdrop-blur-sm border-none rounded-lg p-4 focus:ring-2 focus:ring-secondary text-xs font-bold tracking-widest uppercase outline-none" placeholder="EMAIL" type="email"/>
 </div>
-<textarea class="w-full bg-surface-container-lowest/40 backdrop-blur-sm border-none rounded-lg p-4 focus:ring-2 focus:ring-secondary text-xs font-bold tracking-widest uppercase outline-none" placeholder="PROJECT OVERVIEW" rows="4"></textarea>
-<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-black tracking-widest text-xs uppercase hover:bg-secondary transition-colors duration-300">Dispatch Message</button>
-</form>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 mt-20 bg-slate-50 dark:bg-slate-900 tonal-shift bg-surface-container">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto space-y-4 md:space-y-0">
+<div>
+<div class="text-lg font-black text-slate-900 dark:text-white font-headline mb-2">Mastering Agentic AI</div>
+<p class="font-['Inter'] text-xs text-slate-500 dark:text-slate-400">© 2024 Kinetic Intelligence. All rights reserved.</p>
 </div>
-</div>
-<div class="max-w-screen-2xl mx-auto px-12 pb-12 flex flex-col md:flex-row justify-between items-center text-slate-500 dark:text-slate-400 text-[10px] tracking-[0.2em] uppercase font-bold">
-<p>© 2024 ALGORITHMIC ATELIER. PRECISION MEETS SOPHISTICATION.</p>
-<div class="flex gap-8 mt-4 md:mt-0">
-<a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a>
-<a class="hover:text-secondary transition-colors" href="#">Data Governance</a>
+<div class="flex flex-wrap justify-center gap-8 font-['Inter'] text-xs">
+<a class="text-slate-500 hover:text-blue-500 hover:opacity-80 transition-opacity" href="#">Refund Policy</a>
+<a class="text-slate-500 hover:text-blue-500 hover:opacity-80 transition-opacity" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-blue-500 hover:opacity-80 transition-opacity" href="#">Discord Community</a>
+<a class="text-slate-500 hover:text-blue-500 hover:opacity-80 transition-opacity" href="#">Support</a>
 </div>
 </div>
 </footer>
-</main>
-
-<!-- ===================== CHATBOT WIDGET ===================== -->
-<style>
-  /* --- Chatbot Container --- */
-  #chatbot-fab {
-    position: fixed;
-    bottom: 32px;
-    right: 32px;
-    z-index: 9999;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 16px;
-  }
-
-  /* --- Toggle Button --- */
-  #chatbot-toggle-btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 9999px;
-    background: linear-gradient(135deg, #006875, #00daf3);
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 8px 32px rgba(0, 104, 117, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    flex-shrink: 0;
-  }
-  #chatbot-toggle-btn:hover {
-    transform: scale(1.08);
-    box-shadow: 0 12px 40px rgba(0, 104, 117, 0.55);
-  }
-  #chatbot-toggle-btn .material-symbols-outlined {
-    color: white;
-    font-size: 28px;
-    transition: transform 0.3s ease;
-  }
-
-  /* --- Chat Panel --- */
-  #chatbot-panel {
-    width: 380px;
-    max-width: calc(100vw - 48px);
-    height: 520px;
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid rgba(196, 198, 207, 0.4);
-    border-radius: 24px;
-    box-shadow: 0 24px 64px rgba(0, 33, 71, 0.14);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transform-origin: bottom right;
-    transform: scale(0.85);
-    opacity: 0;
-    pointer-events: none;
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s ease;
-  }
-  #chatbot-panel.open {
-    transform: scale(1);
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  /* --- Header --- */
-  #chatbot-header {
-    background: linear-gradient(135deg, #000a1e 0%, #002147 100%);
-    padding: 16px 20px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-shrink: 0;
-  }
-  #chatbot-header .avatar {
-    width: 38px;
-    height: 38px;
-    border-radius: 9999px;
-    background: linear-gradient(135deg, #006875, #00daf3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #chatbot-header .avatar .material-symbols-outlined {
-    color: white;
-    font-size: 20px;
-  }
-  #chatbot-header .info .name {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 800;
-    font-size: 14px;
-    color: white;
-    line-height: 1.2;
-  }
-  #chatbot-header .info .status {
-    font-size: 11px;
-    color: #76d6d5;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  #chatbot-header .info .status::before {
-    content: '';
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    border-radius: 9999px;
-    background: #76d6d5;
-    animation: pulse-dot 1.8s ease-in-out infinite;
-  }
-  @keyframes pulse-dot {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
-  }
-
-  /* --- Messages Area --- */
-  #chatbot-messages {
-    flex: 1;
-    overflow-y: auto;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    scroll-behavior: smooth;
-  }
-  #chatbot-messages::-webkit-scrollbar { width: 4px; }
-  #chatbot-messages::-webkit-scrollbar-thumb { background: #c4c6cf; border-radius: 99px; }
-
-  /* --- Message Bubbles --- */
-  .chat-msg {
-    max-width: 82%;
-    padding: 10px 14px;
-    border-radius: 18px;
-    font-size: 13.5px;
-    line-height: 1.55;
-    animation: msg-in 0.25s ease;
-  }
-  @keyframes msg-in {
-    from { opacity: 0; transform: translateY(8px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  .chat-msg.user {
-    align-self: flex-end;
-    background: linear-gradient(135deg, #000a1e, #002147);
-    color: white;
-    border-bottom-right-radius: 4px;
-  }
-  .chat-msg.bot {
-    align-self: flex-start;
-    background: rgba(239, 237, 241, 0.9);
-    color: #1a1b1e;
-    border-bottom-left-radius: 4px;
-  }
-  .chat-msg.bot.typing {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    padding: 12px 16px;
-  }
-  .chat-msg.bot.typing span {
-    width: 8px; height: 8px;
-    background: #74777f;
-    border-radius: 9999px;
-    animation: typing-bounce 1.2s ease-in-out infinite;
-  }
-  .chat-msg.bot.typing span:nth-child(2) { animation-delay: 0.2s; }
-  .chat-msg.bot.typing span:nth-child(3) { animation-delay: 0.4s; }
-  @keyframes typing-bounce {
-    0%, 60%, 100% { transform: translateY(0); }
-    30% { transform: translateY(-6px); }
-  }
-
-  /* --- Input Area --- */
-  #chatbot-input-area {
-    padding: 12px 14px;
-    border-top: 1px solid rgba(196, 198, 207, 0.3);
-    display: flex;
-    gap: 8px;
-    align-items: flex-end;
-    flex-shrink: 0;
-    background: rgba(255,255,255,0.5);
-  }
-  #chatbot-input {
-    flex: 1;
-    border: 1.5px solid #e3e2e6;
-    border-radius: 14px;
-    padding: 10px 14px;
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    resize: none;
-    outline: none;
-    background: white;
-    color: #1a1b1e;
-    max-height: 100px;
-    transition: border-color 0.2s;
-    line-height: 1.5;
-  }
-  #chatbot-input:focus { border-color: #006875; }
-  #chatbot-send-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 12px;
-    background: #000a1e;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    transition: background 0.2s, transform 0.15s;
-  }
-  #chatbot-send-btn:hover { background: #006875; transform: scale(1.05); }
-  #chatbot-send-btn:disabled { background: #c4c6cf; cursor: not-allowed; transform: none; }
-  #chatbot-send-btn .material-symbols-outlined { color: white; font-size: 20px; }
-</style>
-
-<!-- Chatbot HTML -->
-<div id="chatbot-fab">
-  <!-- Chat Panel -->
-  <div id="chatbot-panel">
-    <!-- Header -->
-    <div id="chatbot-header">
-      <div class="avatar"><span class="material-symbols-outlined">smart_toy</span></div>
-      <div class="info">
-        <div class="name">CES AI Assistant</div>
-        <div class="status">Online — ces-chatbot-gpt-5.4</div>
-      </div>
-    </div>
-
-    <!-- Messages -->
-    <div id="chatbot-messages">
-      <div class="chat-msg bot">
-        👋 Xin chào! Tôi là <strong>CES AI Assistant</strong>.<br>
-        Bạn muốn hỏi gì về Data Science, AI hay Banking Analytics?
-      </div>
-    </div>
-
-    <!-- Input -->
-    <div id="chatbot-input-area">
-      <textarea
-        id="chatbot-input"
-        placeholder="Nhập tin nhắn..."
-        rows="1"
-      ></textarea>
-      <button id="chatbot-send-btn" title="Gửi">
-        <span class="material-symbols-outlined">send</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- FAB Toggle -->
-  <button id="chatbot-toggle-btn" title="Mở chatbot">
-    <span class="material-symbols-outlined" id="chatbot-icon">chat</span>
-  </button>
-</div>
-
-<script>
-  // ---- CONFIG ----
-  const API_BASE_URL = "https://9router.vuhai.io.vn/v1";
-  const API_KEY      = "sk-4bd27113b7dc78d1-lh6jld-f4f9c69f";
-  const MODEL        = "ces-chatbot-gpt-5.4";
-
-  // ---- STATE ----
-  const conversationHistory = [
-    {
-      role: "system",
-      content: "You are CES AI Assistant — a smart, concise, and professional AI chatbot for 'Algorithmic Atelier', the portfolio of a Senior Data Scientist specializing in Banking & Agentic AI. Help visitors learn about the portfolio owner's skills, experience, and projects. Respond in the same language as the user."
-    }
-  ];
-  let isBotTyping = false;
-
-  // ---- DOM REFS ----
-  const panel       = document.getElementById("chatbot-panel");
-  const toggleBtn   = document.getElementById("chatbot-toggle-btn");
-  const chatIcon    = document.getElementById("chatbot-icon");
-  const messagesEl  = document.getElementById("chatbot-messages");
-  const inputEl     = document.getElementById("chatbot-input");
-  const sendBtn     = document.getElementById("chatbot-send-btn");
-
-  // ---- TOGGLE PANEL ----
-  toggleBtn.addEventListener("click", () => {
-    const isOpen = panel.classList.toggle("open");
-    chatIcon.textContent = isOpen ? "close" : "chat";
-    if (isOpen) { inputEl.focus(); scrollToBottom(); }
-  });
-
-  // ---- AUTO-RESIZE TEXTAREA ----
-  inputEl.addEventListener("input", () => {
-    inputEl.style.height = "auto";
-    inputEl.style.height = Math.min(inputEl.scrollHeight, 100) + "px";
-  });
-
-  // ---- SEND ON ENTER (Shift+Enter = new line) ----
-  inputEl.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && !e.shiftKey) {
-      e.preventDefault();
-      handleSend();
-    }
-  });
-  sendBtn.addEventListener("click", handleSend);
-
-  // ---- HELPERS ----
-  function scrollToBottom() {
-    setTimeout(() => { messagesEl.scrollTop = messagesEl.scrollHeight; }, 50);
-  }
-
-  function addMessage(role, content) {
-    const bubble = document.createElement("div");
-    bubble.className = `chat-msg ${role}`;
-    bubble.innerHTML = content.replace(/\n/g, "<br>");
-    messagesEl.appendChild(bubble);
-    scrollToBottom();
-    return bubble;
-  }
-
-  function showTypingIndicator() {
-    const bubble = document.createElement("div");
-    bubble.className = "chat-msg bot typing";
-    bubble.id = "typing-indicator";
-    bubble.innerHTML = "<span></span><span></span><span></span>";
-    messagesEl.appendChild(bubble);
-    scrollToBottom();
-  }
-
-  function removeTypingIndicator() {
-    const indicator = document.getElementById("typing-indicator");
-    if (indicator) indicator.remove();
-  }
-
-  function setLoading(loading) {
-    isBotTyping = loading;
-    sendBtn.disabled = loading;
-    inputEl.disabled = loading;
-  }
-
-  // ---- MAIN SEND HANDLER ----
-  async function handleSend() {
-    const text = inputEl.value.trim();
-    if (!text || isBotTyping) return;
-
-    // Reset input
-    inputEl.value = "";
-    inputEl.style.height = "auto";
-
-    // Show user message
-    addMessage("user", text);
-
-    // Add to history
-    conversationHistory.push({ role: "user", content: text });
-
-    // Show typing
-    setLoading(true);
-    showTypingIndicator();
-
-    try {
-      const response = await fetch(`${API_BASE_URL}/chat/completions`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${API_KEY}`
-        },
-        body: JSON.stringify({
-          model: MODEL,
-          messages: conversationHistory,
-          temperature: 0.7,
-          max_tokens: 1024
-        })
-      });
-
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-      }
-
-      const data = await response.json();
-      const botReply = data.choices?.[0]?.message?.content || "Xin lỗi, tôi không nhận được phản hồi từ server.";
-
-      // Add bot reply to history
-      conversationHistory.push({ role: "assistant", content: botReply });
-
-      removeTypingIndicator();
-      addMessage("bot", botReply);
-
-    } catch (err) {
-      console.error("Chatbot API error:", err);
-      removeTypingIndicator();
-      addMessage("bot", `⚠️ Lỗi kết nối: <em>${err.message}</em><br>Vui lòng thử lại.`);
-    } finally {
-      setLoading(false);
-      inputEl.focus();
-    }
-  }
-</script>
-<!-- ================== END CHATBOT WIDGET ================== -->
-
 </body></html>
